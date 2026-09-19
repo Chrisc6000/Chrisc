@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chris's webring</title>
+    <title>Document</title>
 </head>
 <body>
     
@@ -65,25 +65,23 @@
                                     </p>
 
                                     <section>
-                                       
+                                        <h2>My little corner of the webring</h2>
+                                        <p>Do you want to...</p>
+                                        <ol>
+                                            <li>bring me a treat</li>
+                                            <li>take a nap</li>
+                                            <li>buy me a new cat toy?</li>
+                                        </ol>
                                         <img src="pg.png" width="67" height="67" alt="NBA logo">
                                     </section>
 
                                     <section>
-
-
-                                        
-                                
+                                        <h2>A few words</h2>
                                         <blockquote>
-                                            Seasons change and our love went cold
-Feed the flame 'cause we can't let go
-Run away, but we're running in circles
-Run away, run away
-I dare you to do something
-I'm waiting on you again
-So I don't take the blame
-Run away, but we're running in circles
-Run away, run away, run away
+                                            The night gets quiet, the city slows,<br>
+                                            A steady rhythm finds its way home.<br>
+                                            Round and round, the feeling sings:<br>
+                                            There is still joy in ordinary things.
                                         </blockquote>
                                     </section>
 
@@ -160,7 +158,7 @@ Run away, run away, run away
                                         </pre>
                                     </section>
 
-                                
+                                    <p>Next on the list: <a>Next Webring Member</a></p>
                                 </body>
                                 </html>
 
