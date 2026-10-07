@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Golden State Warriors Club Sign Up</title>
+	<style>
+		:root {
+			--navy: #1d428a;
+			--gold: #ffc72c;
+			--ink: #172033;
+			--paper: #f5f7fb;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background: var(--paper);
+			color: var(--ink);
+			font-family: Georgia, serif;
+			margin: 0;
+			padding: 2rem 1rem;
+		}
+
+		main {
+			background: white;
+			border-top: 10px solid var(--gold);
+			margin: 0 auto;
+			max-width: 650px;
+			padding: 2rem;
+		}
+
+		h1 {
+			color: var(--navy);
+			margin-top: 0;
+		}
+
+		.intro {
+			line-height: 1.6;
+		}
+
+		label,
+		legend {
+			font-weight: bold;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 0.4rem;
+		}
+
+		input,
+		select,
+		textarea {
+			border: 1px solid #aab4c5;
+			border-radius: 4px;
+			font: inherit;
+			margin-bottom: 1.2rem;
+			padding: 0.7rem;
+			width: 100%;
+		}
+
+		fieldset {
+			border: 1px solid #aab4c5;
+			margin: 0 0 1.2rem;
+			padding: 1rem;
+		}
+
+		fieldset label {
+			font-weight: normal;
+			margin: 0.7rem 0;
+		}
+
+		input[type="radio"] {
+			margin: 0 0.5rem 0 0;
+			width: auto;
+		}
+
+		textarea {
+			min-height: 120px;
+			resize: vertical;
+		}
+
+		button {
+			background: var(--navy);
+			border: 0;
+			border-radius: 4px;
+			color: white;
+			cursor: pointer;
+			font: bold 1rem Georgia, serif;
+			padding: 0.8rem 1.3rem;
+		}
+
+		button:hover {
+			background: #142f68;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Join the Golden State Warriors Club</h1>
+		<p class="intro">Become part of Dub Nation! Sign up to receive Warriors news, events, and fan updates.</p>
+
+		<form action="#" method="post">
+			<label for="full-name">Full name</label>
+			<input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+			<label for="email">Email address</label>
+			<input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+			<fieldset>
+				<legend>How long have you been a Warriors fan?</legend>
+				<label for="new-fan">
+					<input type="radio" id="new-fan" name="fan-experience" value="new" required>
+					I am a new fan
+				</label>
+				<label for="longtime-fan">
+					<input type="radio" id="longtime-fan" name="fan-experience" value="longtime">
+					I have been a fan for years
+				</label>
+				<label for="lifelong-fan">
+					<input type="radio" id="lifelong-fan" name="fan-experience" value="lifelong">
+					I am a lifelong fan
+				</label>
+			</fieldset>
+
+			<label for="favorite-player">Who is your favorite Warriors player?</label>
+			<select id="favorite-player" name="favorite-player" required>
+				<option value="">Choose a player</option>
+				<option value="stephen-curry">Stephen Curry</option>
+				<option value="draymond-green">Draymond Green</option>
+				<option value="jimmy-butler">Jimmy Butler</option>
+				<option value="other">Other</option>
+			</select>
+
+			<label for="message">Why do you want to join the club?</label>
+			<textarea id="message" name="message" placeholder="Tell us about your Warriors fandom..."></textarea>
+
+			<button type="submit">Join the club</button>
+		</form>
+	</main>
+</body>
+</html>

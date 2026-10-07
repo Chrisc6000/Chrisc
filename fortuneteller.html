@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fortune Teller</title>
+  </head>
+  <body>
+    <h1>Your Fortune</h1>
+    <div id="fortune" aria-live="polite"></div>
+    <a href="index.html">Ask another...</a>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const question = params.get("question");
+      const answer = Math.random() < 0.5 ? "Yes" : "No";
+      const fortune = document.querySelector("#fortune");
+
+      if (question) {
+        const questionText = document.createElement("p");
+        questionText.textContent = `Your question: ${question}`;
+        const answerText = document.createElement("h2");
+        answerText.textContent = answer;
+        fortune.append(questionText, answerText);
+      } else {
+        fortune.innerHTML = "<p>Ask a yes or no question to get your fortune.</p>";
+      }
+    </script>
+  </body>
+</html>
